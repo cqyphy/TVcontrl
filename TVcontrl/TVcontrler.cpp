@@ -35,7 +35,7 @@ long long getruntime(string timestr) {
 	}
 	ss >> temp;
 	getline(ss, token, ',');
-	if (token == "days" )//&& 
+	if (token == "days" || token == "day")//&& 
 	{
 		day = stoi(temp);
 		getline(ss, token, ':');
@@ -100,7 +100,7 @@ void limit_funtion(long long daily_limit_time,long long &usedtime){
 		long long now_uptime;
 		getstr = execCmd(uptimestr.c_str());
 		now_uptime = getruntime(getstr);
-		usedtime += now_uptime - begin_uptime;
+		usedtime += (now_uptime - begin_uptime);
 		cout << getstr << endl <<now_uptime<<endl<<"used time:"<< usedtime<<endl;
 		if ((now_uptime - begin_uptime) >= limitTime)
 		{
