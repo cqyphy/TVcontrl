@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="TVcontrl/TVcontrl.vcxproj" Id="d7a38405-5df4-4a81-a8de-47936b2c8414" />
+</Solution>
